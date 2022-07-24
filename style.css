@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+      --paleBlue: hsl(225, 100%, 94%);
+      --brightBlue: hsl(245, 75%, 52%);
+      --veryPaleBlue:hsl(225, 100%, 98%);
+      --desaturatedBlue: hsl(224, 23%, 55%);
+      --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: url('./images/pattern-background-desktop.svg') var(--paleBlue);
+      background-repeat: repeat-x;
+}
+.main-content {
+      
+}
+.card {
+      width: 400px;
+      background-color: white;
+      text-align: center;
+      border-radius: 20px;
+      
+      overflow: hidden;
+}
+.music-image {
+      width: 100%;
+}
+.text-title {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      font-weight: 700;
+      color: var(--darkBlue);
+}
+.text-content {
+      width: 80%;
+      color: var(--desaturatedBlue);
+      margin: 0 auto;
+      padding-bottom: 20px;
+
+}
+.payment {
+      font-size: 15px;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      line-height: 1.5;
+      background-color: var(--veryPaleBlue);
+      padding: 15px 20px;
+      border-radius: 10px;     
+}
+.price-tag {
+      margin-left: -60px;
+}
+.icon-music__song {
+      width: 45px;
+}
+.price-tag p:first-child {
+      font-weight: 900;
+      color: var(--darkBlue);
+}
+.price-tag p:last-child {
+      color: var(--desaturatedBlue);
+}
+.btn {
+      margin-top: 20px;
+      width: 80%;
+      border: none;
+      cursor: pointer;
+}
+.btn-success {
+      color: white;
+      background-color: var(--brightBlue);
+      padding: 15px 0;
+      border-radius: 10px;
+}
+.btn-cancel {
+      background: transparent;
+      padding: 15px 0;
+      margin-bottom: 20px;
+      color: var(--desaturatedBlue);
+      font-weight: 900;
+}
+.btn-success:hover {
+     background-color: hsla(245, 100%, 55%, 0.664);
+}
+.btn-cancel:hover {
+      color: var(--darkBlue);
+}
+a:hover {
+      text-decoration: none;
+}
+@media only screen and (max-width: 400px) {
+      .card {
+            width: 350px;
+      }
+      .price-tag {
+            margin-left: -40px;
+      }
+}
